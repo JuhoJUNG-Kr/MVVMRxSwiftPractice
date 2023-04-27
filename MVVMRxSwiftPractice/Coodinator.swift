@@ -16,7 +16,7 @@ class Coodinator {
     
     //rootViewController 시작 화면으로 지정 -> Scene delegate에서 start 함수 호출
     func start() {
-        let rootViewController = RootViewController()
+        let rootViewController = RootViewController(viewModel: RootViewModel(articleService: ArticleService()))
         let navigationRootViewController = UINavigationController(rootViewController: rootViewController)
         window.rootViewController = navigationRootViewController
         window.makeKeyAndVisible()
