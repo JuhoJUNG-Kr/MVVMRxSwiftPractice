@@ -38,7 +38,7 @@ final class ArticleService: ArticleServiceProtocol {
     
     private func fetchNews(completion: @escaping((Error?, [Article]?) -> Void)) {
         let urlString =
-        "https://newsapi.org/v2/everything?q=tesla&from=2023-03-27&sortBy=publishedAt&apiKey=cbd1287a323046a3a2baad1a5003f1d5"
+        "https://newsapi.org/v2/everything?q=tesla&from=2023-03-28&sortBy=publishedAt&apiKey=cbd1287a323046a3a2baad1a5003f1d5"
         
         guard let url = URL(string: urlString) else { return completion(NSError(domain: "juho293", code: 404), nil)}
         

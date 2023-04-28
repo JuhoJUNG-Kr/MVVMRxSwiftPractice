@@ -10,7 +10,7 @@ import RxSwift
 
 final class RootViewModel {
     
-    private let title = "Juho News"
+     let title = "Juho News"
     
 //    private let articleService = ArticleService()
 //    이렇게 만들어도 되지만 실무에선 잘 사용하지 않는다. 테스트 하기 용이하게,
